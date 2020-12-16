@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import "./quoteBox.scss";
 
-const tweetIt = "https://twitter.com/intent/tweet?text=";
+const tweetIt = "https://twitter.com/intent/tweet";
 const quotes = [
   {
     quote: "Life isn’t about getting and having, it’s about giving and being.",
@@ -68,8 +68,25 @@ const quotes = [
   },
 ];
 
+const colorPairings = [
+  {
+    "color1": "#facc15",
+    "color2": "#f97316"
+  },
+  {
+    "color1": "#4ade80",
+    "color2": "#06b6d4"
+  },
+  {
+    "color1": "#a855f7",
+    "color2": "#6366f1"
+  }
+]
+
 export default function QuoteBox() {
+
   const [currentQuote, setCurrentQuote] = useState("");
+  let randomize = Math.floor(Math.random() * colorPairings.length);
 
   const handleChange = () => {
     setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)]);
@@ -87,13 +104,14 @@ export default function QuoteBox() {
             icon={faQuoteLeft}
             size="lg"
             className="quote__icon"
+            style={{color: `${colorPairings[randomize].color1}`}}
           />
           <p>{currentQuote.quote}</p>
         </div>
-        <div className="quote__footer">
+        <div className="quote__footer" style={{background: `linear-gradient(to bottom right, ${colorPairings[randomize].color1}, ${colorPairings[randomize].color2}`}}>
           - {currentQuote.author}
           <button>
-            <a>
+            <a href={`${tweetIt}?text="${currentQuote.quote}" - ${currentQuote.author}`} target='_blank' rel="noreferrer">
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="lg"

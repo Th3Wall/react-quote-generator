@@ -23,7 +23,7 @@
     }
 
     &__icon {
-        color: rgba(255,237,213,1);
+        opacity: 0.3;
         font-size: 1.7em;
     }
 
@@ -48,7 +48,6 @@
         font-weight: 600;
         border-bottom-left-radius: .75em;
         border-bottom-right-radius: .75em;
-        background: linear-gradient(to bottom right,#facc15,#f97316);
         padding: 2em 1.5em;
 
         button {
