@@ -1,0 +1,49 @@
+.quote {
+
+    &__wrp {
+        background-color: white;
+        width: 20em;
+        border-radius: .75em;
+    }
+
+    &__sentence {
+        color: black;
+        font-size: 22px;
+        line-height: 1.6;
+        font-weight: 600;
+        border-top-left-radius: .75em;
+        border-top-right-radius: .75em;
+        padding: 1.5em;
+    }
+
+    &__icon {
+        color: rgba(255,237,213,1);
+        font-size: 1.7em;
+    }
+
+    &__tweet {
+        color: rgb(255,237,213);
+        opacity: 0.6;
+        font-size: 1.7em;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    &__footer {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(255,237,213,1);
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 600;
+        border-bottom-left-radius: .75em;
+        border-bottom-right-radius: .75em;
+        background: linear-gradient(to bottom right,#facc15,#f97316);
+        padding: 2em 1.5em;
+    }
+
+}
