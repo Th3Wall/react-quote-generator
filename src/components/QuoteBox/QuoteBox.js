@@ -80,6 +80,22 @@ const colorPairings = [
   {
     "color1": "#a855f7",
     "color2": "#6366f1"
+  },
+  {
+    "color1": "#ec4899",
+    "color2": "#f43f5e"
+  },
+  {
+    "color1": "#fb923c",
+    "color2": "#db2777"
+  },
+  {
+    "color1": "#38bdf8",
+    "color2": "#6366f1"
+  },
+  {
+    "color1": "#22d3ee",
+    "color2": "#0ea5e9"
   }
 ]
 
@@ -87,6 +103,8 @@ export default function QuoteBox() {
 
   const [currentQuote, setCurrentQuote] = useState("");
   let randomize = Math.floor(Math.random() * colorPairings.length);
+  let encodedTweet = encodeURIComponent('"'+ currentQuote.quote +'" - '+currentQuote.author)
+  let composedTweetUrl = `${tweetIt}?text=${encodedTweet}`;
 
   const handleChange = () => {
     setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)]);
@@ -111,7 +129,7 @@ export default function QuoteBox() {
         <div className="quote__footer" style={{background: `linear-gradient(to bottom right, ${colorPairings[randomize].color1}, ${colorPairings[randomize].color2}`}}>
           - {currentQuote.author}
           <button>
-            <a href={`${tweetIt}?text="${currentQuote.quote}" - ${currentQuote.author}`} target='_blank' rel="noreferrer">
+            <a href={composedTweetUrl} target='_blank' rel="noreferrer">
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="lg"
