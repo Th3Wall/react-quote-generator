@@ -4,6 +4,12 @@
         background-color: white;
         width: 20em;
         border-radius: .75em;
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+
+        &:hover {
+            transform: rotate(-2deg);
+        }
     }
 
     &__sentence {
@@ -36,7 +42,7 @@
         flex: 1;
         align-items: center;
         justify-content: space-between;
-        color: rgba(255,237,213,1);
+        color: white;
         font-size: 18px;
         line-height: 1.4;
         font-weight: 600;
@@ -44,6 +50,13 @@
         border-bottom-right-radius: .75em;
         background: linear-gradient(to bottom right,#facc15,#f97316);
         padding: 2em 1.5em;
+
+        button {
+            background: none;
+            border: 0;
+            box-shadow: none;
+            outline: 0;
+        }
     }
 
 }
