@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import FloatingButton from "./components/FloatingButton/FloatingButton";
 import QuoteBox from "./components/QuoteBox/QuoteBox";
+import { AnimatePresence } from "framer-motion"
 import "./App.css";
 
 const quotesGist = "https://gist.githubusercontent.com/Th3Wall/8d9d6adb080e04ee6e5fcae2707fdde2/raw/90eb9489b774d5da82675b35936260ce9d0327ce/quotes.json";
+const tweetIt = "https://twitter.com/intent/tweet";
 const colorPairings = [
   {
     "color1": "#facc15",
@@ -55,20 +57,31 @@ const App = () => {
     setCurrentGradient(colorPairings[Math.floor(Math.random() * colorPairings.length)]);
   }
 
+  const encodeTweets = () => {
+    let encodedTweet = encodeURIComponent('"'+ currentQuote.quote +'" - '+currentQuote.author)
+    let composedTweetUrl = `${tweetIt}?text=${encodedTweet}`;
+    return composedTweetUrl;
+  }
+
   const triggerChange = () => {
     getQuotes();
+    encodeTweets();
   }
 
   useEffect(() => {
     getQuotes();
+    encodeTweets();
+    // eslint-disable-next-line
   }, []);
 
 
   return (
-    <div className="App">
-      <FloatingButton triggerChange={triggerChange} currentGradient={currentGradient} />
-      <QuoteBox currentQuote={currentQuote} currentGradient={currentGradient} />
-    </div>
+    <AnimatePresence>
+      <div className="App">
+        <FloatingButton triggerChange={triggerChange} currentGradient={currentGradient} />
+        <QuoteBox currentQuote={currentQuote} currentGradient={currentGradient} composedTweetUrl={encodeTweets()} />
+      </div>
+    </AnimatePresence>
   );
 };
 
