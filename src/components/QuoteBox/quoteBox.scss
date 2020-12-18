@@ -14,7 +14,7 @@
 
     &__sentence {
         color: black;
-        font-size: 22px;
+        font-size: clamp(1rem, 1.8vw, 1.4rem);
         line-height: 1.6;
         font-weight: 600;
         border-top-left-radius: .75em;
@@ -43,7 +43,7 @@
         align-items: center;
         justify-content: space-between;
         color: white;
-        font-size: 18px;
+        font-size: clamp(0.8rem, 1.6vw, 1.2rem);
         line-height: 1.4;
         font-weight: 600;
         border-bottom-left-radius: .75em;
