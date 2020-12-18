@@ -26,3 +26,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .flbtn {
+        width: 75px;
+        height: 75px;
+    }
+}
