@@ -23,6 +23,20 @@ Here's the [demo link](https://react-quote-generator.netlify.app/).
 - [React](https://reactjs.org/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [SASS/SCSS](https://sass-lang.com/)
+- [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
+
+## Netlify deploy & configuration
+
+> The site is developed with some specific https://netlify.com apis.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b1596bca-ce66-4aac-9b10-9bf4c7662533/deploy-status)](https://app.netlify.com/sites/react-quote-generator/deploys)
+
+### Deploy configuration steps
+
+1. Connect your GitHub account to Netlify
+3. Select the project
+2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
+3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
 
 ## Available Scripts
 
