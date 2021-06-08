@@ -2,14 +2,18 @@
 # React Quote Generator
 > This is a very small project created with the purpose of learning the fundamentals of React.js starting from a simple [Create React App](https://github.com/facebook/create-react-app).
 
+<br/>
+
 ## 🎯 About ##
 
 I've started this project with the idea of reworking one of the ending projects of the Front End Libraries Certification (300 hours) of [FreeCodeCamp](https://www.freecodecamp.org/learn).
 I have structured the project with two small React components and I have styled it with the new TailwindCSS gradients.
 One of the feature of this project is to share the current visible quote on Twitter via its icon.
+<br/><br/>
 
-### Demo
+## ▶ Demo ##
 Here's the [demo link](https://react-quote-generator.netlify.app/).
+<br/><br/>
 
 ## :sparkles: Features ##
 
@@ -17,6 +21,7 @@ Here's the [demo link](https://react-quote-generator.netlify.app/).
 :heavy_check_mark: React Hooks<br/>
 :heavy_check_mark: Some little Framer Motion animation<br/>
 :heavy_check_mark: Twitter Share
+<br/><br/>
 
 ## :rocket: Technologies ##
 
@@ -24,6 +29,7 @@ Here's the [demo link](https://react-quote-generator.netlify.app/).
 - [Framer Motion](https://www.framer.com/motion/)
 - [SASS/SCSS](https://sass-lang.com/)
 - [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
+<br/><br/>
 
 ## Netlify deploy & configuration
 
@@ -37,6 +43,7 @@ Here's the [demo link](https://react-quote-generator.netlify.app/).
 3. Select the project
 2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
 3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
+<br/><br/>
 
 ## Available Scripts
 
@@ -74,6 +81,7 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/><br/>
 
 ## Learn More
 
