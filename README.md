@@ -11,8 +11,11 @@ I have structured the project with two small React components and I have styled 
 One of the feature of this project is to share the current visible quote on Twitter via its icon.
 <br/><br/>
 
-## ▶ Demo ##
-Here's the [demo link](https://react-quote-generator.netlify.app/).
+## ▶️ Demo
+
+Here you can find the demo link:
+
+- [Netlify](https://react-quote-generator.netlify.app/)
 <br/><br/>
 
 ## :sparkles: Features ##
