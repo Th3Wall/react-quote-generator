@@ -1,5 +1,5 @@
 ![Image of React Quote Generator Project](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/ReactQuoteGenerator/ReactQuoteGenerator_readme.png)
-# React Quote Generator
+# 💬 React Quote Generator
 > This is a very small project created with the purpose of learning the fundamentals of React.js starting from a simple [Create React App](https://github.com/facebook/create-react-app).
 
 ## 🎯 About ##
@@ -28,7 +28,7 @@ Here you can find the demo link:
 - [SASS/SCSS](https://sass-lang.com/)
 - [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
 
-## Netlify deploy & configuration
+## :rotating_light: Netlify deploy & configuration
 
 > The site is developed with some specific https://netlify.com apis.
 
